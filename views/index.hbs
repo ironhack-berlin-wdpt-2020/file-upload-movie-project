@@ -1,0 +1,15 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form action="/upload-image" method="post" enctype="multipart/form-data">
+
+  <input type="file" name="my-photo" id="">
+  <button type="submit">Submit</button>
+</form>
+
+
+<h1>List of movies</h1>
+{{#each movies}}
+<p>{{this.title}}</p>
+<img src="{{this.imgUrl}}" alt="" srcset="">
+{{/each}}
